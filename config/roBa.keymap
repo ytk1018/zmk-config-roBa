@@ -120,10 +120,10 @@
 
         MOUSE {
             bindings = <
-&kp ESC    &kp LC(SEMICOLON)  &kp LC(SLASH)  &kp LC(R)  &kp LC(T)                          &kp LC(LEFT_BRACKET)  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &kp LC(RIGHT_BRACKET)
-&kp LC(A)  &kp LC(S)          &kp LC(D)      &kp LC(F)  &kp LC(G)      &trans      &trans  &kp HOME              &kp LEFT     &kp DOWN  &kp RIGHT      &kp END
-&kp LC(Z)  &kp LC(X)          &kp LC(C)      &kp LC(V)  &kp LS(LC(K))  &trans      &trans  &mkp MB4              &mkp MB1     &mkp MB3  &mkp MB2       &trans
-&trans     &trans             &trans         &trans     &trans         &trans      &trans  &trans                                                      &kp LC(COLON)
+&kp ESC    &kp LC(SEMICOLON)  &kp LC(SLASH)  &kp LC(R)  &kp LC(T)                          &kp LC(LEFT_BRACKET)     &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &kp LC(RIGHT_BRACKET)
+&kp LC(A)  &kp LC(S)          &kp LC(D)      &kp LC(F)  &kp LC(G)      &trans      &trans  &kp HOME                 &kp LEFT     &kp DOWN  &kp RIGHT      &kp END
+&kp LC(Z)  &kp LC(X)          &kp LC(C)      &kp LC(V)  &kp LS(LC(K))  &trans      &trans  &mkp MB4                 &mkp MB1     &mkp MB3  &mkp MB2       &trans
+&trans     &trans             &trans         &trans     &trans         &trans      &trans  &kp LANG_ZENKAKUHANKAKU                                        &kp LC(COLON)
             >;
         };
 
