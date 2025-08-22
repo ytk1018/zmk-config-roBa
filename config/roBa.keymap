@@ -129,10 +129,10 @@
 
         SCROLL {
             bindings = <
-&kp LC(LA(DELETE))  &trans  &trans  &trans  &trans                       &trans     &trans  &trans  &trans  &trans
-&trans              &trans  &trans  &trans  &trans  &trans      &trans   &trans     &trans  &trans  &trans  &trans
-&trans              &trans  &trans  &trans  &trans  &trans      &trans   &trans     &trans  &trans  &trans  &trans
-&trans              &trans  &trans  &trans  &trans  &trans      &kp ESC  &kp ENTER                          &trans
+&kp LC(LA(DELETE))  &trans  &trans  &trans  &trans                       &kp LC(W)     &kp LC(PAGE_UP)  &trans    &kp LC(PAGE_DOWN)  &kp LC(P)
+&trans              &trans  &trans  &trans  &trans  &trans      &trans   &kp LC(HOME)  &trans           &trans    &trans             &kp LC(END)
+&trans              &trans  &trans  &trans  &trans  &trans      &trans   &mkp MB4      &mkp MB1         &mkp MB3  &mkp MB2           &trans
+&trans              &trans  &trans  &trans  &trans  &trans      &kp ESC  &kp ENTER                                                   &trans
             >;
         };
 
