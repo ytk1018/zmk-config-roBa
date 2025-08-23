@@ -81,8 +81,8 @@
         default_layer {
             bindings = <
 &kp Q      &kp SEMICOLON   &kp SLASH     &kp COMMA               &kp PERIOD                                                     &kp W                 &kp R  &kp Y  &kp M  &kp P
-&kp A      &kp I           &kp U         &kp E                   &kp O        &trans                    &trans                  &kp K                 &kp S  &kp T  &kp N  &kp H
-&kp Z      &kp X           &kp C         &kp V                   &kp L        &trans                    &trans                  &kp G                 &kp J  &kp D  &kp F  &lt 5 B
+&kp A      &kp I           &kp U         &kp E                   &kp O        &trans                    &kp LANG1               &kp K                 &kp S  &kp T  &kp N  &kp H
+&kp Z      &kp X           &kp C         &kp V                   &kp L        &mo 6                     &kp LANG2               &kp G                 &kp J  &kp D  &kp F  &lt 5 B
 &kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_WIN  &lt_to_layer_0 5 ENTER  &lt 2 SPACE  &lt_to_layer_0 4 TAB      &mt LEFT_ALT BACKSPACE  &mt LEFT_SHIFT MINUS                       &kp SQT
             >;
 
@@ -100,8 +100,8 @@
 
         NUM {
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &kp PRINTSCREEN                       &kp BACKSLASH         &kp N7  &kp N8  &kp N9  &kp LEFT_BRACKET
-&kp F5  &kp F6   &kp F7   &kp F8   &trans           &trans      &trans   &kp BSLH              &kp N4  &kp N5  &kp N6  &kp RIGHT_BRACKET
+&kp F1  &kp F2   &kp F3   &kp F4   &kp PRINTSCREEN                       &kp LS(MINUS)         &kp N7  &kp N8  &kp N9  &kp LEFT_BRACKET
+&kp F5  &kp F6   &kp F7   &kp F8   &trans           &trans      &trans   &kp INT_YEN           &kp N4  &kp N5  &kp N6  &kp RIGHT_BRACKET
 &kp F9  &kp F10  &kp F11  &kp F12  &trans           &trans      &trans   &kp N0                &kp N1  &kp N2  &kp N3  &kp BSLH
 &trans  &trans   &trans   &trans   &trans           &trans      &kp DEL  &mt LEFT_SHIFT EQUAL                          &trans
             >;
@@ -118,28 +118,28 @@
 
         MOUSE {
             bindings = <
-&kp ESC    &kp LC(SEMICOLON)  &kp LC(SLASH)  &kp LC(R)  &kp LC(T)                          &kp LC(LEFT_BRACKET)  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &kp LC(RIGHT_BRACKET)
-&kp LC(A)  &kp LC(S)          &kp LC(D)      &kp LC(F)  &kp LC(G)      &trans      &trans  &kp HOME              &kp LEFT     &kp DOWN  &kp RIGHT      &kp END
-&kp LC(Z)  &kp LC(X)          &kp LC(C)      &kp LC(V)  &kp LS(LC(K))  &trans      &trans  &mkp MB4              &mkp MB1     &mkp MB3  &mkp MB2       &trans
-&trans     &trans             &trans         &trans     &trans         &trans      &trans  &kp LANG5                                                   &kp LC(COLON)
+&kp ESC    &kp LC(SEMICOLON)  &kp LC(SLASH)  &kp LC(R)  &kp LC(T)                          &kp LC(RIGHT_BRACKET)  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &kp LC(BSLH)
+&kp LC(A)  &kp LC(S)          &kp LC(D)      &kp LC(F)  &kp LC(G)      &trans      &trans  &kp HOME               &kp LEFT     &kp DOWN  &kp RIGHT      &kp END
+&kp LC(Z)  &kp LC(X)          &kp LC(C)      &kp LC(V)  &kp LS(LC(K))  &trans      &trans  &mkp MB4               &mkp MB1     &mkp MB3  &mkp MB2       &trans
+&trans     &trans             &trans         &trans     &trans         &trans      &trans  &trans                                                       &kp LC(COLON)
             >;
         };
 
         SCROLL {
             bindings = <
-&kp LC(LA(DELETE))  &trans  &trans  &trans  &trans                                &kp LC(W)     &kp LC(PAGE_UP)   &kp LC(LG(D))   &kp LC(PAGE_DOWN)  &kp LC(P)
-&trans              &trans  &trans  &trans  &kp LC(LG(TAB))  &trans      &trans   &kp LC(HOME)  &kp LC(LG(LEFT))  &kp LC(LG(F4))  &kp LC(LG(RIGHT))  &kp LC(END)
-&trans              &trans  &trans  &trans  &trans           &trans      &trans   &mkp MB4      &mkp MB1          &mkp MB3        &mkp MB2           &trans
-&trans              &trans  &trans  &trans  &trans           &trans      &kp ESC  &kp ENTER                                                          &trans
+&kp LC(LA(DELETE))  &trans  &trans  &trans  &trans                                   &kp LC(W)     &kp LC(PAGE_UP)   &kp LC(LG(D))   &kp LC(PAGE_DOWN)  &kp LC(P)
+&trans              &trans  &trans  &trans  &kp LC(LG(TAB))  &trans         &trans   &kp LC(HOME)  &kp LC(LG(LEFT))  &kp LC(LG(F4))  &kp LC(LG(RIGHT))  &kp LC(END)
+&trans              &trans  &trans  &trans  &trans           &trans         &trans   &mkp MB4      &mkp MB1          &mkp MB3        &mkp MB2           &trans
+&trans              &trans  &trans  &trans  &trans           &kp LCTRL      &kp ESC  &kp ENTER                                                          &trans
             >;
         };
 
         layer_6 {
             bindings = <
-&trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+&trans  &trans  &trans  &trans  &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
     };
