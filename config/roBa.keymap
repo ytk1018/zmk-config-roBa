@@ -62,30 +62,6 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
-        cpi_up: cpi_up {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&cpi_up>;
-            label = "CPI_UP";
-        };
-        cpi_down: cpi_down {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&cpi_down>;
-            label = "CPI_DOWN";
-        };
-        scroll_up: scroll_up {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&scroll_up>;
-            label = "SCROLL_UP";
-        };
-        scroll_down: scroll_down {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&scroll_down>;
-            label = "SCROLL_DOWN";
-        };
     };
 
     behaviors {
@@ -151,14 +127,10 @@
 
         SCROLL {
             bindings = <
-&kp LC(LA(DELETE))  &trans  &trans        &trans     &trans                                &kp LC(W)     &kp LC(PAGE_UP)   &kp LC(LG(D))   &kp LC(PAGE_DOWN)  &kp LC(P)
-&trans              &trans  &scroll_up    &cpi_up    &kp LC(LG(TAB))  &trans      &trans   &kp LC(HOME)  &kp LC(LG(LEFT))  &kp LC(LG(F4))  &kp LC(LG(RIGHT))  &kp LC(END)
-&trans              &trans  &scroll_down  &cpi_down  &trans           &trans      &trans   &mkp MB4      &mkp MB1          &mkp MB3        &mkp MB2           &trans
-&trans              &trans  &trans        &trans     &trans           &trans      &kp ESC  &kp ENTER                                                          &trans
-&kp LC(LA(DELETE))  &trans  &trans  &trans  &trans                                   &kp LC(W)     &kp LC(PAGE_UP)   &kp LC(LG(D))   &kp LC(PAGE_DOWN)  &kp LC(P)
-&trans              &trans  &trans  &trans  &kp LC(LG(TAB))  &trans         &trans   &kp LC(HOME)  &kp LC(LG(LEFT))  &kp LC(LG(F4))  &kp LC(LG(RIGHT))  &kp LC(END)
-&trans              &trans  &trans  &trans  &trans           &trans         &trans   &mkp MB4      &mkp MB1          &mkp MB3        &mkp MB2           &trans
-&trans              &trans  &trans  &trans  &trans           &kp LCTRL      &kp ESC  &kp ENTER                                                          &trans
+&kp LC(LA(DELETE))  &trans  &trans  &trans  &trans                                &kp LC(W)     &kp LC(PAGE_UP)   &kp LC(LG(D))   &kp LC(PAGE_DOWN)  &kp LC(P)
+&trans              &trans  &trans  &trans  &kp LC(LG(TAB))  &trans      &trans   &kp LC(HOME)  &kp LC(LG(LEFT))  &kp LC(LG(F4))  &kp LC(LG(RIGHT))  &kp LC(END)
+&trans              &trans  &trans  &trans  &trans           &trans      &trans   &mkp MB4      &mkp MB1          &mkp MB3        &mkp MB2           &trans
+&trans              &trans  &trans  &trans  &trans           &kp LCTRL   &kp ESC  &kp ENTER                                                          &trans
             >;
         };
 
