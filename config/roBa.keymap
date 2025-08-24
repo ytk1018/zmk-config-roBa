@@ -81,8 +81,8 @@
         default_layer {
             bindings = <
 &kp Q      &kp SEMICOLON   &kp SLASH     &kp COMMA               &kp PERIOD                                                     &kp W                 &kp R  &kp Y  &kp M  &kp P
-&kp A      &kp I           &kp U         &kp E                   &kp O        &trans                    &kp LANG1               &kp K                 &kp S  &kp T  &kp N  &kp H
-&kp Z      &kp X           &kp C         &kp V                   &kp L        &mo 6                     &kp LANG2               &kp G                 &kp J  &kp D  &kp F  &lt 5 B
+&kp A      &kp I           &kp U         &kp E                   &kp O        &trans                    &trans                  &kp K                 &kp S  &kp T  &kp N  &kp H
+&kp Z      &kp X           &kp C         &kp V                   &kp L        &mo 6                     &trans                  &kp G                 &kp J  &kp D  &kp F  &lt 5 B
 &kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_WIN  &lt_to_layer_0 5 ENTER  &lt 2 SPACE  &lt_to_layer_0 4 TAB      &mt LEFT_ALT BACKSPACE  &mt LEFT_SHIFT MINUS                       &kp SQT
             >;
 
@@ -121,16 +121,16 @@
 &kp ESC    &kp LC(SEMICOLON)  &kp LC(SLASH)  &kp LC(R)  &kp LC(T)                          &kp LC(RIGHT_BRACKET)  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &kp LC(BSLH)
 &kp LC(A)  &kp LC(S)          &kp LC(D)      &kp LC(F)  &kp LC(G)      &trans      &trans  &kp HOME               &kp LEFT     &kp DOWN  &kp RIGHT      &kp END
 &kp LC(Z)  &kp LC(X)          &kp LC(C)      &kp LC(V)  &kp LS(LC(K))  &trans      &trans  &mkp MB4               &mkp MB1     &mkp MB3  &mkp MB2       &trans
-&trans     &trans             &trans         &trans     &trans         &trans      &trans  &trans                                                       &kp LC(COLON)
+&trans     &trans             &trans         &trans     &trans         &trans      &trans  &kp GRAVE                                                    &kp LC(COLON)
             >;
         };
 
         SCROLL {
             bindings = <
-&kp LC(LA(DELETE))  &trans  &trans  &trans  &trans                                &kp LC(W)     &kp LC(PAGE_UP)   &kp LC(LG(D))   &kp LC(PAGE_DOWN)  &kp LC(P)
-&trans              &trans  &trans  &trans  &kp LC(LG(TAB))  &trans      &trans   &kp LC(HOME)  &kp LC(LG(LEFT))  &kp LC(LG(F4))  &kp LC(LG(RIGHT))  &kp LC(END)
-&trans              &trans  &trans  &trans  &trans           &trans      &trans   &mkp MB4      &mkp MB1          &mkp MB3        &mkp MB2           &trans
-&trans              &trans  &trans  &trans  &trans           &kp LCTRL   &kp ESC  &kp ENTER                                                          &trans
+&kp LC(LA(DELETE))  &trans  &trans  &trans  &trans                                   &kp LC(W)     &kp LC(PAGE_UP)   &kp LC(LG(D))   &kp LC(PAGE_DOWN)  &kp LC(P)
+&trans              &trans  &trans  &trans  &kp LC(LG(TAB))  &trans         &trans   &kp LC(HOME)  &kp LC(LG(LEFT))  &kp LC(LG(F4))  &kp LC(LG(RIGHT))  &kp LC(END)
+&trans              &trans  &trans  &trans  &trans           &trans         &trans   &mkp MB4      &mkp MB1          &mkp MB3        &mkp MB2           &trans
+&trans              &trans  &trans  &trans  &trans           &kp LCTRL      &kp ESC  &kp ENTER                                                          &trans
             >;
         };
 
