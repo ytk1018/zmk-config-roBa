@@ -29,29 +29,14 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
+        left_click {
+            bindings = <&mkp MB1>;
+            key-positions = <18 19>;
         };
 
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+        right_click {
+            bindings = <&mkp MB2>;
+            key-positions = <19 20>;
         };
     };
 
@@ -127,10 +112,10 @@
 
         SCROLL {
             bindings = <
-&kp LC(LA(DELETE))  &trans  &trans  &trans  &trans                                   &kp LC(W)     &kp LC(PAGE_UP)   &kp LC(LG(D))   &kp LC(PAGE_DOWN)  &kp LC(P)
-&trans              &trans  &trans  &trans  &kp LC(LG(TAB))  &trans         &trans   &kp LC(HOME)  &kp LC(LG(LEFT))  &kp LC(LG(F4))  &kp LC(LG(RIGHT))  &kp LC(END)
-&trans              &trans  &trans  &trans  &trans           &trans         &trans   &mkp MB4      &mkp MB1          &mkp MB3        &mkp MB2           &trans
-&trans              &trans  &trans  &trans  &trans           &kp LCTRL      &kp ESC  &kp ENTER                                                          &trans
+&kp LC(LA(DELETE))  &trans  &trans  &trans  &trans                               &kp LC(W)     &kp LC(PAGE_UP)   &kp LC(LG(D))   &kp LC(PAGE_DOWN)  &kp LC(P)
+&trans              &trans  &trans  &trans  &kp LG(TAB)  &trans         &trans   &kp LC(HOME)  &kp LC(LG(LEFT))  &kp LC(LG(F4))  &kp LC(LG(RIGHT))  &kp LC(END)
+&trans              &trans  &trans  &trans  &trans       &trans         &trans   &mkp MB4      &mkp MB1          &mkp MB3        &mkp MB2           &trans
+&trans              &trans  &trans  &trans  &trans       &kp LCTRL      &kp ESC  &kp ENTER                                                          &trans
             >;
         };
 
