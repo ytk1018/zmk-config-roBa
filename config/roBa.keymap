@@ -14,6 +14,7 @@
 
 &trackball {
     // automouse-layer = <4>; // 2025-08-28 オートマウスレイヤーをやめた
+
     scroll-layers = <5>;
 
     // arrows {
@@ -41,6 +42,46 @@
         right_click {
             bindings = <&mkp MB2>;
             key-positions = <19 20>;
+        };
+
+        middle_click {
+            bindings = <&mkp MB3>;
+            key-positions = <18 20>;
+        };
+
+        hankaku {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <2 1>;
+        };
+
+        zenkaku {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <2 3>;
+        };
+
+        Enter {
+            bindings = <&kp ENTER>;
+            key-positions = <7 8>;
+        };
+
+        ctrl_z {
+            bindings = <&kp LC(Z)>;
+            key-positions = <22 23>;
+        };
+
+        ctrl_x {
+            bindings = <&kp LC(X)>;
+            key-positions = <23 24>;
+        };
+
+        ctrl_c {
+            bindings = <&kp LC(C)>;
+            key-positions = <24 25>;
+        };
+
+        ctrl_v {
+            bindings = <&kp V>;
+            key-positions = <25 26>;
         };
     };
 
@@ -84,10 +125,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp SEMICOLON   &kp SLASH     &kp COMMA               &kp PERIOD                                            &kp W                 &kp R  &kp Y  &kp M  &kp P
-&kp A      &kp I           &kp U         &kp E                   &kp O        &trans                    &trans         &kp K                 &kp S  &kp T  &kp N  &kp H
-&kp Z      &kp X           &kp C         &kp V                   &kp L        &mo 6                     &kp LEFT_ALT   &kp G                 &kp J  &kp D  &kp F  &lt 5 B
-&kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_WIN  &lt_to_layer_0 5 ENTER  &lt 2 SPACE  &lt_to_layer_0 4 TAB      &kp BACKSPACE  &mt LEFT_SHIFT MINUS                       &kp SQT
+&kp Q      &kp SEMICOLON   &kp SLASH     &kp COMMA               &kp PERIOD                                                     &kp W                 &kp R  &kp Y  &kp M  &kp P
+&kp A      &kp I           &kp U         &kp E                   &kp O        &trans                    &kp LA(UP)              &kp K                 &kp S  &kp T  &kp N  &kp H
+&kp Z      &kp X           &kp C         &kp V                   &kp L        &mo 6                     &kp BACKSPACE           &kp G                 &kp J  &kp D  &kp F  &lt 5 B
+&kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_WIN  &lt_to_layer_0 5 ENTER  &lt 2 SPACE  &lt_to_layer_0 4 TAB      &mt LEFT_ALT BACKSPACE  &mt LEFT_SHIFT MINUS                       &kp SQT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
