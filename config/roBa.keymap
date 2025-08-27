@@ -80,7 +80,7 @@
         };
 
         ctrl_v {
-            bindings = <&kp V>;
+            bindings = <&kp LC(V)>;
             key-positions = <25 26>;
         };
     };
