@@ -49,39 +49,24 @@
             key-positions = <18 20>;
         };
 
-        hankaku {
-            bindings = <&kp LANGUAGE_2>;
+        han_zen {
+            bindings = <&kp GRAVE>;
             key-positions = <2 1>;
-        };
-
-        zenkaku {
-            bindings = <&kp LANGUAGE_1>;
-            key-positions = <2 3>;
         };
 
         Enter {
             bindings = <&kp ENTER>;
-            key-positions = <7 8>;
+            key-positions = <21 20>;
         };
 
-        ctrl_z {
-            bindings = <&kp LC(Z)>;
-            key-positions = <22 23>;
-        };
-
-        ctrl_x {
-            bindings = <&kp LC(X)>;
+        shift_tab {
+            bindings = <&kp LS(TAB)>;
             key-positions = <23 24>;
         };
 
-        ctrl_c {
-            bindings = <&kp LC(C)>;
+        tab {
+            bindings = <&kp TAB>;
             key-positions = <24 25>;
-        };
-
-        ctrl_v {
-            bindings = <&kp LC(V)>;
-            key-positions = <25 26>;
         };
     };
 
