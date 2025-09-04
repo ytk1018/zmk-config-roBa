@@ -5,7 +5,11 @@
 
 &mt {
     flavor = "balanced";
-    quick-tap-ms = <0>;
+    quick-tap-ms = <150>; // TAP & HOLD でTAP側のキーが長押し扱いになる設定
+};
+
+&lt {
+    quick-tap-ms = <150>; // TAP & HOLD でTAP側のキーが長押し扱いになる設定
 };
 
 &sl {
@@ -115,10 +119,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp SEMICOLON   &kp SLASH     &kp COMMA               &kp PERIOD                                                     &kp W                 &kp R  &kp Y  &kp M  &kp P
-&kp A      &kp I           &kp U         &kp E                   &kp O        &trans                    &kp LA(UP)              &kp K                 &kp S  &kp T  &kp N  &kp H
-&kp Z      &kp X           &kp C         &kp V                   &kp L        &mo 6                     &kp BACKSPACE           &kp G                 &kp J  &kp D  &kp F  &lt 5 B
-&kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_WIN  &lt_to_layer_0 5 ENTER  &lt 2 SPACE  &lt_to_layer_0 4 TAB      &mt LEFT_ALT BACKSPACE  &mt LEFT_SHIFT MINUS                       &kp SQT
+&kp Q      &kp SEMICOLON   &kp SLASH     &kp COMMA    &kp PERIOD                                          &kp W                 &kp R  &kp Y  &kp M  &kp P
+&kp A      &kp I           &kp U         &kp E        &kp O        &trans         &kp LA(UP)              &kp K                 &kp S  &kp T  &kp N  &kp H
+&kp Z      &kp X           &kp C         &kp V        &kp L        &mo 6          &kp BACKSPACE           &kp G                 &kp J  &kp D  &kp F  &lt 5 B
+&kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_WIN  &lt 5 ENTER  &lt 2 SPACE  &lt 4 TAB      &mt LEFT_ALT BACKSPACE  &mt LEFT_SHIFT MINUS                       &kp SQT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
