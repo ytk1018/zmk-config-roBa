@@ -17,9 +17,9 @@
 };
 
 &trackball {
-    // automouse-layer = <4>; // 2025-08-28 オートマウスレイヤーをやめた
+    // automouse-layer = <1>; // 2025-08-28 オートマウスレイヤーをやめた
 
-    scroll-layers = <5>;
+    scroll-layers = <3>;
 
     // arrows {
     //     layers = <3>;
@@ -97,7 +97,7 @@
         //         <&macro_release>,
         //         <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
         //         <&macro_tap>,
-        //         <&sl 4>;
+        //         <&sl 1>;
         // 
         //     label = "MKP_EXIT_AML";
         // };
