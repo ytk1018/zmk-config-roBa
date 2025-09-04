@@ -87,6 +87,13 @@
             label = "TO_LAYER_0";
         };
 
+        double_click: double_click {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp MB1 &mkp MB1>;
+            label = "DOUBLE_CLICK";
+        };
+
         // mkp_exit_AML: mkp_exit_AML {
         //     compatible = "zmk,behavior-macro-one-param";
         //     #binding-cells = <1>;
@@ -121,7 +128,7 @@
             bindings = <
 &kp Q      &kp SEMICOLON   &kp SLASH     &kp COMMA    &kp PERIOD                                          &kp W                 &kp R  &kp Y  &kp M  &kp P
 &kp A      &kp I           &kp U         &kp E        &kp O        &trans         &kp LA(UP)              &kp K                 &kp S  &kp T  &kp N  &kp H
-&kp Z      &kp X           &kp C         &kp V        &kp L        &mo 4          &trans                  &kp G                 &kp J  &kp D  &kp F  &lt 3 B
+&kp Z      &kp X           &kp C         &kp V        &kp L        &mo 4          &double_click           &kp G                 &kp J  &kp D  &kp F  &lt 3 B
 &kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_WIN  &lt 3 ENTER  &lt 2 SPACE  &lt 1 TAB      &mt LEFT_ALT BACKSPACE  &mt LEFT_SHIFT MINUS                       &kp SQT
             >;
 
