@@ -16,7 +16,7 @@
 };
 
 &zip_temp_layer {
-    excluded-positions = <30 31 32>; // このキー以外を押すとタイムアウトに関係なくAML解除される
+    excluded-positions = <30 31 32 39>; // このキー以外を押すとタイムアウトに関係なくAML解除される
 };
 
 / {
