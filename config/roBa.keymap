@@ -20,7 +20,7 @@
 &trackball {
     // automouse-layer = <1>; // 古いAML有効の方法
 
-    scroll-layers = <3>;
+    scroll-layers = <4>;
 
     // arrows {
     //     layers = <3>;
@@ -119,6 +119,15 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+        };
+
+        MOUSE_AML {
+            bindings = <
+&kp ESC    &kp LC(SEMICOLON)  &kp LC(SLASH)  &kp LC(R)  &kp LC(T)                          &kp LC(RIGHT_BRACKET)  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &kp LC(BSLH)
+&kp LC(A)  &kp LC(S)          &kp LC(D)      &kp LC(F)  &kp LC(G)      &trans      &trans  &kp HOME               &kp LEFT     &kp DOWN  &kp RIGHT      &kp END
+&kp LC(Z)  &kp LC(X)          &kp LC(C)      &kp LC(V)  &kp LS(LC(K))  &trans      &trans  &mkp MB4               &mkp MB1     &mkp MB3  &mkp MB2       &trans
+&trans     &trans             &trans         &trans     &trans         &trans      &trans  &kp GRAVE                                                    &kp LC(COLON)
+            >;
         };
 
         MOUSE {
