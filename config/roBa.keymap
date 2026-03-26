@@ -78,16 +78,6 @@
             bindings = <&kp ENTER>;
             key-positions = <18 19 20>;
         };
-
-        teams_mute {
-            bindings = <&kp LS(LC(M))>;
-            key-positions = <27 26>;
-        };
-
-        teams_disconnect {
-            bindings = <&kp LS(LC(H))>;
-            key-positions = <27 25>;
-        };
     };
 
     macros {
@@ -160,10 +150,10 @@
 
         SCROLL {
             bindings = <
-&kp LC(LA(DELETE))  &trans  &trans  &trans  &trans                               &kp LC(W)     &kp LC(PAGE_UP)   &kp LC(LG(D))   &kp LC(PAGE_DOWN)  &kp LC(P)
-&trans              &trans  &trans  &trans  &kp LG(TAB)  &trans         &trans   &kp LC(HOME)  &kp LC(LG(LEFT))  &kp LC(LG(F4))  &kp LC(LG(RIGHT))  &kp LC(END)
-&trans              &trans  &trans  &trans  &trans       &trans         &trans   &mkp MB4      &mkp MB1          &mkp MB3        &mkp MB2           &trans
-&trans              &trans  &trans  &trans  &trans       &kp LCTRL      &kp ESC  &kp ENTER                                                          &trans
+&kp LC(LA(DELETE))  &trans  &trans  &trans         &trans                               &kp LC(W)     &kp LC(PAGE_UP)   &kp LC(LG(D))   &kp LC(PAGE_DOWN)  &kp LC(P)
+&kp LS(LC(H))       &trans  &trans  &kp LS(LC(M))  &kp LG(TAB)  &trans         &trans   &kp LC(HOME)  &kp LC(LG(LEFT))  &kp LC(LG(F4))  &kp LC(LG(RIGHT))  &kp LC(END)
+&trans              &trans  &trans  &trans         &trans       &trans         &trans   &mkp MB4      &mkp MB1          &mkp MB3        &mkp MB2           &trans
+&trans              &trans  &trans  &trans         &trans       &kp LCTRL      &kp ESC  &kp ENTER                                                          &trans
             >;
         };
 
