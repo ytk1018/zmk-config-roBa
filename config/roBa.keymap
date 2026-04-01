@@ -78,6 +78,16 @@
             bindings = <&kp ENTER>;
             key-positions = <18 19 20>;
         };
+
+        teams_mute {
+            bindings = <&kp LS(LC(M))>;
+            key-positions = <27 26>;
+        };
+
+        teams_disconnect {
+            bindings = <&kp LS(LC(H))>;
+            key-positions = <27 25>;
+        };
     };
 
     macros {
